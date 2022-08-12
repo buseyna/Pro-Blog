@@ -21,8 +21,8 @@ return (
 		<Row>
 		<Column>
 			<Heading>About US</Heading>
-			<FooterLink href="#">OUR GOAL</FooterLink>
-			<FooterLink href="#">OUR Vision</FooterLink>
+			<FooterLink href="#">Our Aim</FooterLink>
+			<FooterLink href="#">Vision</FooterLink>
 			<FooterLink href="#">Testimonials</FooterLink>
 		</Column>
 		<Column>
@@ -34,10 +34,10 @@ return (
 		</Column>
 		<Column>
 			<Heading>Contact Us</Heading>
-			<FooterLink href="#">Uttar Pradesh</FooterLink>
-			<FooterLink href="#">Ahemdabad</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
+			<FooterLink href="#">Istanbul</FooterLink>
+			<FooterLink href="#">Ankara</FooterLink>
+			<FooterLink href="#">Antalya</FooterLink>
+			<FooterLink href="#">Bodrum</FooterLink>
 		</Column>
 		<Column>
 			<Heading>Social Media</Heading>

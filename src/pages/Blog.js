@@ -1,7 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react'
-import Posts from "../components/Posts"
+import React, {useState} from 'react'
 import Sidebar from "../components/Sidebar"
-import Footer from '../components/Footer'
 import Fetch from '../components/Fetch'
 
 const Blog = (props) => {
@@ -18,7 +16,7 @@ const Blog = (props) => {
  <div>
         {error && <div>Could not fetch data of that resource</div>}
         {loading && <div className='text-center fs-4 text-muted'>Loading...</div>}
-        <h1 style={{backgroundColor:"lightgrey" ,padding:'20px',  height:"100px"}}>Check our latest posts</h1>
+        <h1 style={{backgroundColor:"lightgrey" ,padding:'20px',  height:"100px"}}>Our latest posts</h1>
 
         {data && ( 
         data["data"].map((post) => (
@@ -39,7 +37,7 @@ const Blog = (props) => {
      </div>
             
     <div className="col-3">
-    <h2>Latest comments</h2>
+    <h2>Latest Comments</h2>
 
       <Sidebar/>
     

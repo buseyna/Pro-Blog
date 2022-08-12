@@ -1,5 +1,9 @@
+
+import React, { useEffect } from 'react'
+import useEmblaCarousel from 'embla-carousel-react'
 import slider1 from "../Assets/slider1.png"
 import slider2 from "../Assets/slider2.jpg"
+
 
 const Slider=()=>{
     return(
@@ -29,6 +33,26 @@ const Slider=()=>{
 </div>
         </div>
     )
+  }
+  
+export const EmblaCarousel = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false })
+
+  useEffect(() => {
+    if (emblaApi) {
+      // Embla API is ready
+    }
+  }, [emblaApi])
+
+  return (
+    <div className="embla" ref={emblaRef}>
+      <div className="embla__container">
+        <div className="embla__slide">Slide 1</div>
+        <div className="embla__slide">Slide 2</div>
+      </div>
+    </div>
+  )
 }
+
 
 export default Slider

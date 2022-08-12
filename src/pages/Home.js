@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Slider from '../components/Slider';
+import axios from 'axios'
 
 const Home = (props) => {
   const url = 'https://www.wp-course.site/wp-json/youthink/post';
@@ -8,7 +9,7 @@ const Home = (props) => {
   })
      function submit(e){
         axios.post(url,{
-        subscribe:data.subscribe
+subscribe:data.subscribe
     })
          .then(res=>{
          console.log(res.data)
